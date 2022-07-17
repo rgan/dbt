@@ -1,0 +1,23 @@
+name: Run DBT
+
+on:
+  push:
+
+concurrency: dbt
+
+jobs:
+    deploy:
+      runs-on: ubuntu-latest
+      env:
+        PRIVATE_KEY: ${{ secrets.SNOWFLAKE_AUTH_PRIVATE_KEY }}
+
+      steps:
+        - uses: actions/checkout@v3
+
+        - name: Setup private key
+          shell: bash
+          run: echo $PRIVATE_KEY >> rsa_key_snowflake.p8
+
+        - name: Run DBT
+          shell: bash
+          run: inv run-dbt

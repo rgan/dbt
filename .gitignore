@@ -1,0 +1,6 @@
+*.p8
+*.pub
+*.parquet
+.env/
+.idea/
+logs/

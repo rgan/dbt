@@ -1,0 +1,9 @@
+
+version: 2
+
+models:
+  - name: trips_by_day
+    description: "NYC trips"
+
+  - name: avg_trip_metrics_by_day
+    description: "NYC trips grouped by day"
