@@ -1,0 +1,10 @@
+name: 'Setup private key'
+description: 'Sets up snowflake private key file'
+
+runs:
+  using: "composite"
+  steps:
+    - run: echo $PRIVATE_KEY >> private_key_snowflake.rsa && openssl rsa -in private_key_snowflake.rsa -out private_key_snowflake.der -outform DER
+      shell: bash
+    - run: pip install -r dev-requirements.txt
+      shell: bash

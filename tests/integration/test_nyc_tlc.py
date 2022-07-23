@@ -11,7 +11,6 @@ from tasks import connection
 ])
 def test_nyc_tlc(dbt_view_name, cols):
     config = json.loads(open(f"conf/ci/config.json", encoding="utf-8").read())
-    print(config)
     with connection(config) as conn:
         sql = f"select {cols} from {dbt_view_name}"
         actual = json.loads(pandas.read_sql(sql, conn).to_json(orient='records'))

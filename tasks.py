@@ -61,7 +61,6 @@ def run_integration_tests(context, env="ci", parallelism=1):
         context.run(sql_cmd(config, f'drop database {database_name}'))
 
 
-
 def create_dbt_profile(path, config):
     with open(f"{path}/profiles.yml", "w+") as f:
         f.write(f'''nyc_tlc:
