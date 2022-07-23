@@ -1,6 +1,10 @@
-*.p8
+*.rsa
+*.der
 *.pub
 *.parquet
 .env/
 .idea/
 logs/
+**/__pycache__/
+**/profiles.yml
+**/.user.yml

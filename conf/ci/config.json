@@ -1,0 +1,9 @@
+{
+  "account": "shb16499.us-east-1",
+  "user": "dbt",
+  "private_key_file_path": "private_key_snowflake",
+  "warehouse": "COMPUTE_WH",
+  "database": "nyc_tlc_ci",
+  "schema": "public",
+  "role": "dbt_role"
+}

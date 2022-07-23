@@ -1,0 +1,16 @@
+[
+  {
+    "vendorid": 1,
+    "tpep_pickup_datetime": "2022-07-20",
+    "total_amount": 20,
+    "passenger_count": 2,
+    "trip_distance": 2.1
+  },
+  {
+    "vendorid": 2,
+    "tpep_pickup_datetime": "2022-07-20",
+    "total_amount": 40,
+    "passenger_count": 3,
+    "trip_distance": 5.1
+  }
+]
