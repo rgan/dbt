@@ -1,7 +1,7 @@
 name: Run DBT
 
 on:
-  workflow-dispatch:
+  workflow_dispatch:
 
 concurrency: dbt_dev
 
