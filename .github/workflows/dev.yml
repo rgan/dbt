@@ -1,4 +1,4 @@
-name: Run DBT
+name: Deploy to dev
 
 on:
   workflow_dispatch:
