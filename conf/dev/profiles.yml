@@ -5,7 +5,7 @@ nyc_tlc:
       database: nyc_tlc
       warehouse: COMPUTE_WH
       schema: public
-      private_key_path: ../rsa_key_snowflake.p8
+      private_key_path: ../private_key_snowflake.rsa
       role: dbt_role
       threads: 1
       type: snowflake

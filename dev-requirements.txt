@@ -4,4 +4,5 @@ pytest==7.1.2
 pytest-xdist==2.5.0
 snowflake-connector-python==2.7.9
 snowflake-connector-python[pandas]==2.7.9
-schemachange==3.4.1
+# TODO: Resove conflict with jinja versions in dbt and schemachange
+# schemachange==3.4.1
