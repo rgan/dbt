@@ -15,6 +15,10 @@ jobs:
         - uses: actions/checkout@v3
         - uses: ./.github/actions/setup
 
+        - name: Run tests
+          shell: bash
+          run: inv run-integration-tests
+
         - name: Run DBT
           shell: bash
           run: inv run-dbt
